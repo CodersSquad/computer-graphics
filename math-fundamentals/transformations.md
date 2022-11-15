@@ -164,25 +164,12 @@ Implement the **Reflection** (choose the one you like), **ShearX** and **ShearY*
 
 ---
 
-# Views
+# What'next?
 
-
----
-
-
-# Projections
-
-
----
-
-
-# Curves
-
-
-----
-
-
-# Surfaces
+### Views
+### Projections
+### Curves
+### Surfaces
 
 
 ---
@@ -190,7 +177,7 @@ Implement the **Reflection** (choose the one you like), **ShearX** and **ShearY*
 # Resources and Credits
 This material is genereated thanks to some extracts from following resources:
 
-- **Computer Graphics with OpenGL** (Chapters 6, 7, 9) by _Donald D. Hearn/M. Pauline Baker, Warren Carithers_, 4th Edition
+- **Computer Graphics with OpenGL** (Chapter 6) by _Donald D. Hearn/M. Pauline Baker, Warren Carithers_, 4th Edition
 
 
 ---
