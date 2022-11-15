@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sections=(graphics-libs)
+sections=(graphics-libs math-fundamentals)
 
 rm -rf public
 
