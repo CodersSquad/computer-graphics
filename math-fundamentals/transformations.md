@@ -166,10 +166,10 @@ Implement the **Reflection** (choose the one you like), **ShearX** and **ShearY*
 
 # What'next?
 
-### Views
-### Projections
 ### Curves
 ### Surfaces
+### Views
+### Projections
 
 
 ---

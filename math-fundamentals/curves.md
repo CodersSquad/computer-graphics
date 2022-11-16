@@ -76,6 +76,14 @@ https://talks.obedmr.com/
 
 ---
 
+# What's next
+
+### Surfaces
+### Views
+### Projections
+
+---
+
 # Resources and Credits
 This material is genereated thanks to some extracts from following resources:
 
