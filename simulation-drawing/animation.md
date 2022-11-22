@@ -75,7 +75,7 @@ We will implement an animation that will simulate a ball that is bouncing as sho
 
 Your program will be showing 3 stages or scenes that will be transitioned by a mouse right-click
 
-Concider the concepts you saw in class and also the following that could be useful:
+Consider the concepts you saw in class and also the following that could be useful:
 
 _gravity, refresh-rate, object deformation, timing, real-time animation, curves drawing algorithms, color, texture, ..._
 
