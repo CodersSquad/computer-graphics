@@ -36,7 +36,7 @@ https://talks.obedmr.com/
 
 - Could you list some special-purpose graphics packages?
 
-- Could you list some general programminge packages?
+- Could you list some general programming packages?
 
 ![bg fit right](./images/question-marks.png)
 
@@ -52,17 +52,17 @@ https://talks.obedmr.com/
 
 ## Graphics functions
 
-- Primitives
-- Attributes
-- Geometric transformations
-- Modeling transformations
-- Viewing transformations
-- Input functions
+- Primitives (_points, lines, curved lines, polygons, shapes, ..._)
+- Attributes (_color, style, area-filling patterns, ..._)
+- Geometric transformations (_size, position, orientation, ..._)
+- Modeling transformations (_individual object descriptions with local coordinates, ..._)
+- Viewing transformations (_projections, screen display, lighting, ..._)
+- Input functions (_control and process of data frow from input devices_)
 
 ---
 
 
-## Libraries and APIs
+## Libraries and APIs: Standards
 
 - Graphical Kernel System (GKS) - 1984
   - Initially, a 2-dimensional graphics package
@@ -75,7 +75,21 @@ https://talks.obedmr.com/
 ---
 
 
-## Our first program in OpenGL - intro
+## Other Graphics Packages
+
+- [Open Inventor Toolkit](https://www.openinventor.com/)
+- [jMonkey Enginge](https://jmonkeyengine.org/)
+- [Unreal Engine](https://www.unrealengine.com/en-US)
+- [Unity Engine](https://unity.com/products/unity-engine)
+- [ModernGL](https://moderngl.readthedocs.io/en/latest/)
+- [PyGame](https://www.pygame.org/news)
+- [Processing](https://processing.org/)
+- ... [Vulcan](https://www.vulkan.org/), [SDL](https://www.libsdl.org/), [DirectX](https://devblogs.microsoft.com/directx/) and **hundreds** more ...
+
+---
+
+
+## OpenGL - Introduction
 
 - *Computer Graphics with OpenGL* _by Hearn, Baker and Carithers_
   - Chapter 2, sections 5
@@ -83,32 +97,57 @@ https://talks.obedmr.com/
 ---
 
 
-## Our first program in OpenGL - Setup
+## OpenGL - Install and Setup
 
-- First, let's install OpenGL
-  - Linux (Debian-based)
-    ```
-    sudo apt-get install freeglut3-dev
-    ```
-  - Windows
-    - http://graphx-opengl-win.obedmr.com
-  - MacOS
-    - http://graphx-opengl-mac.obedmr.com
+- Linux (Debian-based)
+  ```
+  sudo apt-get install freeglut3-dev
+  ```
+- Windows (_mmm, a bit painful_)
+  - http://graphx-opengl-win.obedmr.com
+- MacOS (_same as Windows but MacOS, you know it_)
+  - http://graphx-opengl-mac.obedmr.com
+- Virtual Machine (_it serves for the purpose of first test_)
+  - https://www.virtualbox.org/
 
 ---
 
-## Code Challenge: Our first program in OpenGL
+# ModernGL
+
+https://moderngl.readthedocs.io/en/latest/
+
+
+---
+
+# PyGame
+
+https://www.pygame.org/news
+
+
+---
+
+# Processing
+
+https://processing.org/
+
+---
+
+
+## Code Challenge: First program in OpenGL*
 
 - Go to http://graphx-chlg1.obedmr.com and read about line drawing algorithms
 - Create a program with OpenGL that:
   - Given 2 points in the format `(x, y)`,
   - develop a function `myLine` that will generate a list points that will represent a line
   - and then will draw them in the screen with the `glVertex2i` function
-- You can take a look on [./src/hello-OpenGL.cpp](./src/hello-OpenGL.cpp)
+- You can take a look on [./src/opengl/hello-OpenGL.cpp](./src/opengl/hello-OpenGL.cpp)
 
 ---
 
-### Primitives - world-coordinate reference frame in OpenGL
+
+# Primitives
+
+### World-coordinate reference frame
 
 ```
 glMatrixMode (GL_PROJECTION);
@@ -119,6 +158,7 @@ gluOrtho2D (xmin, xmax, ymin, ymax);
 ![bg fit right](images/world-coordinates.png)
 
 ---
+
 
 ### Primitives - Points
 
@@ -165,7 +205,7 @@ glEnd ( );                 glEnd ( );                      glEnd ( );
 ---
 
 
-## User Interface & Events
+# User Interface & Events
 
 ### Logical classification of Input Devices
 
@@ -190,14 +230,14 @@ glEnd ( );                 glEnd ( );                      glEnd ( );
 
 ### User Interface & Events - Mouse callback example
 
-- Go to [./src/mousePtPlot.cpp](./src/mousePtPlot.cpp)
+- Go to [./src/opengl/mousePtPlot.cpp](./src/opengl/mousePtPlot.cpp)
 
 ---
 
 
 ## Challenge: Polygons drawing
 
-By using [`mousePtPlot.cpp`](./src/mousePtPlot.cpp) and also  [`polygon.cpp`](./src/polygon.cpp) create a new `polygons.cpp` program with the following specs:
+By using [`mousePtPlot.cpp`](./src/opengl/mousePtPlot.cpp) and also  [`polygon.cpp`](./src/opengl/polygon.cpp) create a new `polygons.cpp` program with the following specs:
 
 - By default the program will start drawing a random-color filled pentagon (5 sides)
 - Then, for every left-button mouse click, the polygon will increase its sides by one and it will be filled with a new random color
