@@ -147,7 +147,7 @@ https://processing.org/
 
 # Primitives
 
-### World-coordinate reference frame
+## World-coordinate reference frame
 
 ```
 glMatrixMode (GL_PROJECTION);
@@ -160,7 +160,7 @@ gluOrtho2D (xmin, xmax, ymin, ymax);
 ---
 
 
-### Primitives - Points
+## Primitives - Points (1/3)
 
 ```
 glBegin (GL_POINTS);
@@ -179,7 +179,54 @@ glEnd ( );
 ---
 
 
-### Primitives - Lines
+### Primitives - Points (2/3)
+
+
+- Points as arrays
+
+```
+int point1 [ ] = {50, 100};
+int point2 [ ] = {75, 150};
+int point3 [ ] = {100, 200};
+```
+
+-  Plotting the 3 points
+
+```
+glBegin (GL_POINTS);
+  glVertex2iv (point1);
+  glVertex2iv (point2);
+  glVertex2iv (point3);
+glEnd ( );
+```
+
+---
+
+
+### Primitives - Points (3/3)
+
+- 3D points
+
+```
+glBegin (GL_POINTS);
+  glVertex3f (-78.05, 909.72, 14.60);
+  glVertex3f (261.91, -5200.67, 188.33);
+glEnd ( );
+```
+
+- You can also define a point a a C++ class or a structure (`struct`)
+
+```
+class wcPt2D {
+public:
+  GLfloat x, y;
+};
+```
+
+---
+
+
+## Primitives - Lines
 
 ```
 glBegin (GL_LINES);        glBegin (GL_LINE_STRIP);        glBegin (GL_LINE_LOOP);
@@ -195,7 +242,30 @@ glEnd ( );                 glEnd ( );                      glEnd ( );
 
 ---
 
-### Primitives - attributes
+
+## Primitives - Curves
+
+*This will be seen on [next section](../math-fundamentals/curves.html)
+
+But, let's see the simplest way for doing curves aproximation: _by using polygons_.
+
+![bg contain right](images/curves_aprox.png)
+
+---
+
+
+## Primitives - Fill-Area
+
+- An area that is filled with some solid color or pattern
+- Used to describe surfaces of solid objects
+- Fill regions are usually planar surfaces, mainly polygons
+
+![height:300px](images/fill_area.png)
+
+---
+
+
+## Primitives - attributes
 
 - Basically, it's about the way a primitive is to be displayed.
 - Some attribute parameters, such as color and size, determine the fundamental characteristics of a primitive.
