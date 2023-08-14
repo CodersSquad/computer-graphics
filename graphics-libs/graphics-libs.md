@@ -160,7 +160,7 @@ gluOrtho2D (xmin, xmax, ymin, ymax);
 ---
 
 
-## Primitives - Points (1/3)
+### Primitives - Points (1/3)
 
 ```
 glBegin (GL_POINTS);
