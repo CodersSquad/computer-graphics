@@ -275,6 +275,77 @@ But, let's see the simplest way for doing curves aproximation: _by using polygon
 ---
 
 
+### Primitives - **point** attributes
+
+```
+glPointSize (size);
+```
+
+```
+glColor3f (1.0, 0.0, 0.0);
+glBegin (GL_POINTS);
+  glVertex2i (50, 100);
+  glPointSize (2.0);
+  glColor3f (0.0, 1.0, 0.0);
+  glVertex2i (75, 150);
+  glPointSize (3.0);
+  glColor3f (0.0, 0.0, 1.0);
+  glVertex2i (100, 200);
+glEnd ( );
+```
+
+---
+
+
+### Primitives - **line** attributes
+
+- Line Width
+
+```
+glLineWidth (width);
+```
+
+- Line style
+
+```
+glLineStipple (repeatFactor, pattern);
+```
+
+---
+
+
+
+![bg contain](images/line_attributes_code.png)
+
+---
+
+
+### Primitives - **curve** attributes
+
+![bg fit](images/curve_attributes.png)
+
+---
+
+
+### Primitives - **fill-area** attributes
+
+![bg right fit](images/fill_area_attributes.png)
+
+---
+
+
+### Primitives - **character** attributes
+
+![bg contain](images/character_attributes.png)
+
+---
+
+
+![bg fit](images/character_attributes2.png)
+
+---
+
+
 # User Interface & Events
 
 ### Logical classification of Input Devices
