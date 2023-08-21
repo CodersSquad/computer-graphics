@@ -10,7 +10,7 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ![bg left fit](https://ik.imgkit.net/3vlqs5axxjf/PCWW/uploadedImages/Articles/Opinion/2020/April/digital-transformation-hotels.jpg)
 
 # **Math Fundamentals**
-## Transformations
+## 2D Transformations
 
 https://talks.obedmr.com/
 
@@ -37,7 +37,7 @@ In matrix form:
 
 ---
 
-### Translation in code ([processing](./src/base.js))
+### Translation in code ([processing](./src/processing/2Dtransformations.js))
 
 ```
 class wcPt2D {
@@ -86,7 +86,7 @@ Rotation of a point about an arbitrary pivot:
 
 ---
 
-### Rotation in code ([processing](./src/base.js))
+### Rotation in code ([processing](./src/processing/2Dtransformations.js))
 
 ```
 void rotatePolygon (wcPt2D * verts, GLint nVerts, wcPt2D pivPt, GLdouble theta) {
@@ -129,7 +129,7 @@ We can control the location of a scaled object by choosing a position, called th
 
 ---
 
-### Scaling in code ([processing](./src/base.js))
+### Scaling in code ([processing](./src/processing/2Dtransformations.js))
 
 ```
 void scalePolygon (wcPt2D * verts, GLint nVerts, wcPt2D fixedPt, GLfloat sx, GLfloat sy)
@@ -152,7 +152,11 @@ void scalePolygon (wcPt2D * verts, GLint nVerts, wcPt2D fixedPt, GLfloat sx, GLf
 
 # Challenge: More transformations
 
-Implement the **Reflection** (choose the one you like), **ShearX** and **ShearY** transformations
+- Implement **reflection**
+- Implement **ShearX** and **ShearY**
+- **Change origin to the center of the window** for all the transformations
+- **Base code:** [2Dtransformations.js](src/processing/2Dtransformations.js)
+
 
 ![bg auto right](images/reflection.png)
 

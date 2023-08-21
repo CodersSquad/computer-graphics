@@ -11,7 +11,15 @@ function myRotation(x, y) {
   return [x, y];
 }
 
+function myRotationPiv(x, y) {
+  return [x, y];
+}
+
 function myScaling(x, y) {
+  return [x, y];
+}
+
+function myScalingFxP(x, y) {
   return [x, y];
 }
 
