@@ -60,9 +60,14 @@ https://talks.obedmr.com/
 
 ---
 
-### Example Bézier Curve-Generating Program
+## Challenge: Dynamic Bézier Curve-Generating
 
-[Bezier Algorithm in OpenGL](pdfs/bezier.pdf)
+[OpenGL complete sample code](./src/opengl/bezier.cpp) / [Processing](./src/processing/bezier.js)
+
+- Design a program that will dynamically draw a bézier curve as the control points are being defined with mouse clicks
+- First and second clicks will define the first and final control points
+- Third and fourth clicks will define 2 _dynamic control points_
+- _Dynamic control points_ can be moved with the mouse (click and drag)
 
 ---
 
