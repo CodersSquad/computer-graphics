@@ -25,7 +25,7 @@ https://talks.obedmr.com/
 
 There are 2 types on methods to construct motion sequences:
 
-- **Real-time animation**, where each stage of the sequence is _viewed as it is created_. It mus be _generated at a rate_ that is compatible with the constraints of the _refresh rate_.
+- **Real-time animation**, where each stage of the sequence is _viewed as it is created_. It must be _generated at a rate_ that is compatible with the constraints of the _refresh rate_.
 
 - **frame-by-frame animation**, ach frame of the motion is _separately generated and stored_. Later, the frames can be _recorded on film_, or they can be _displayed consecutively_ on a video monitor in _“real-time playback”_ mode.
 
@@ -55,7 +55,7 @@ Film animators use a variety of methods for depicting and emphasizing motion seq
 
 - squash and stretch
 - timing
-- anicipation
+- anticipation
 - Follow-through actions
 - Staging
 

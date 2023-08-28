@@ -87,14 +87,14 @@ void displayFcn (void)
    /*  Set example number of control points and number of
     *  curve positions to be plotted along the Bezier curve.
     */
-   GLint nCtrlPts = 4, nBezCurvePts = 1000;
+   GLint nCtrlPts = 4, nBezCurvePts = 2000;
 
    wcPt3D ctrlPts [4] = { {-40.0, -40.0, 0.0}, {-10.0, 200.0, 0.0},
                  {10.0, -200.0, 0.0}, {40.0, 40.0, 0.0} };
 
    glClear (GL_COLOR_BUFFER_BIT);   //  Clear display window.
 
-   glPointSize (4);
+   glPointSize (2);
    glColor3f (1.0, 0.0, 0.0);      //  Set point color to red.
 
    bezier (ctrlPts, nCtrlPts, nBezCurvePts);
