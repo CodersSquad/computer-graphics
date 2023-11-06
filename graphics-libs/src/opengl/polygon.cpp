@@ -1,3 +1,8 @@
+//
+// Compile with:
+// g++ polygon.cpp -o polygon -lglut -lGLU -lGL
+//
+
 #include <GL/glut.h>
 #include <math.h>
 #include <stdlib.h>

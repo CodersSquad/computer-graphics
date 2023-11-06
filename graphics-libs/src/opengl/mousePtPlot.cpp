@@ -1,6 +1,10 @@
 // Source code from the book:
 // Computer Graphics with OpenGL- 4th Edition
 // Hearn, Baker & Carither, 2013
+//
+// Compile with:
+// g++ mousePtPlot.cpp -o mousePtPlot -lglut -lGLU -lGL
+//
 #include <GL/glut.h>
 
 GLsizei winWidth = 400, winHeight = 300; // Initial display-window size.
@@ -16,7 +20,7 @@ void displayFcn (void)
 {
     glClear (GL_COLOR_BUFFER_BIT);  //Clear display window.
     glColor3f (1.0, 0.0, 0.0);      //Set point color to red.
-    glPointSize (3.0);              //Set point size to 3.0.
+    glPointSize (10.0);              //Set point size to 3.0.
 }
 
 void winReshapeFcn (GLint newWidth, GLint newHeight)
