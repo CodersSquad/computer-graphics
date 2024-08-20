@@ -89,58 +89,9 @@ https://talks.obedmr.com/
 ---
 
 
-## OpenGL - Introduction
 
-- *Computer Graphics with OpenGL* _by Hearn, Baker and Carithers_
-  - Chapter 2, sections 5
+## Let's code:
 
----
-
-
-## OpenGL - Install and Setup
-
-- Linux (Debian-based)
-  ```
-  sudo apt-get install freeglut3-dev
-  ```
-- Windows (_mmm, a bit painful_)
-  - http://graphx-opengl-win.obedmr.com
-- MacOS (_same as Windows but MacOS, you know it_)
-  - http://graphx-opengl-mac.obedmr.com
-- Virtual Machine (_it serves for the purpose of first test_)
-  - https://www.virtualbox.org/
-
----
-
-# ModernGL
-
-https://moderngl.readthedocs.io/en/latest/
-
-
----
-
-# PyGame
-
-https://www.pygame.org/news
-
-
----
-
-# Processing
-
-https://processing.org/
-
----
-
-
-## Code Challenge: First program in OpenGL*
-
-- Go to http://graphx-chlg1.obedmr.com and read about line drawing algorithms
-- Create a program with OpenGL that:
-  - Given 2 points in the format `(x, y)`,
-  - develop a function `myLine` that will generate a list points that will represent a line
-  - and then will draw them in the screen with the `glVertex2i` function
-- You can take a look on [./src/opengl/hello-OpenGL.cpp](./src/opengl/hello-OpenGL.cpp)
 
 ---
 
@@ -314,7 +265,6 @@ glLineStipple (repeatFactor, pattern);
 ---
 
 
-
 ![bg contain](images/line_attributes_code.png)
 
 ---
@@ -376,21 +326,8 @@ glLineStipple (repeatFactor, pattern);
 ---
 
 
-## Challenge: Polygons drawing
+## Let's code:
 
-By using [`mousePtPlot.cpp`](./src/opengl/mousePtPlot.cpp) and also  [`polygon.cpp`](./src/opengl/polygon.cpp) create a new `polygons.cpp` program with the following specs:
-
-- By default the program will start drawing a random-color filled pentagon (5 sides)
-- Then, for every left-button mouse click, the polygon will increase its sides by one and it will be filled with a new random color
-- The maximun number of sides is 12
-- Once your program reach the maximum number of sides, it will go back to the pentagon
-
----
-
-
-## Challenge: Polygons drawing - useful info
-
-_**Chapters 3, 4 and 18** from the book can be very useful. Consider taking a look on those chapters_
 
 ---
 
