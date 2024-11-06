@@ -89,13 +89,6 @@ https://talks.obedmr.com/
 ---
 
 
-
-## Let's code:
-
-
----
-
-
 # Primitives
 
 ## World-coordinate reference frame
@@ -193,6 +186,12 @@ glEnd ( );                 glEnd ( );                      glEnd ( );
 
 ---
 
+
+## Let's code: Lines Art Drawing
+
+Go to [`cg-linesArt`](https://github.com/CodersSquad/cg-linesArt/tree/main) for instructions.
+
+---
 
 ## Primitives - Curves
 
