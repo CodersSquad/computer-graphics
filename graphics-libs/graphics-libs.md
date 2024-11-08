@@ -327,6 +327,7 @@ glLineStipple (repeatFactor, pattern);
 
 ## Let's code:
 
+Go to [`cg-uiEvents`](https://github.com/CodersSquad/cg-uiEvents/tree/main) for instructions.
 
 ---
 
